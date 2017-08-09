@@ -1,0 +1,3 @@
+rootProject.name = 'MedIncentive'
+
+include ':app'
