@@ -6,10 +6,15 @@ import {
   View
 } from 'react-native';
 
+import { StackNavigator } from 'react-navigation';
 import { COLOR_PRIMARY } from './../style/color.js';
 
 
 export default class Home extends Component {
+  static navigationOptions = {
+    title: 'Welcome',
+  };
+
   render() {
     return (
       <View style={styles.container}>

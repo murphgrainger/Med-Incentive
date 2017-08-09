@@ -1,19 +1,10 @@
-import React, {Component} from 'react';
-import { NavigatorIOS, View, Text } from 'react-native';
+import React, { Component } from 'react';
+import { Root, Tabs } from './config/router.js';
 
-import Home from './components/Home';
-
-export default class App extends Component {
+class App extends Component {
   render() {
-  return (
-    <View>
-      <NavigatorIOS
-       initialRoute={{
-         component: Home,
-         title: 'Home',
-       }}
-     />
-  </View>
-    )
+    return <Root />;
   }
 }
+
+export default App;
