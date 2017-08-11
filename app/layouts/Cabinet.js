@@ -8,19 +8,15 @@ import {
 
 import { COLOR_PRIMARY, COLOR_DARK } from './../style/color.js';
 
-import Greeting from './../components/Greeting';
-import QuoteBox from './../components/QuoteBox';
-import Upcoming from './../components/Upcoming';
 
-
-export default class Home extends Component {
+export default class Cabinet extends Component {
 
   render() {
     return (
       <View style={styles.container}>
-        <Greeting></Greeting>
-        <QuoteBox></QuoteBox>
-        <Upcoming></Upcoming>
+        <Text style={styles.welcome}>
+          Welcome to Your Med Cabinet!
+        </Text>
       </View>
     );
   }
@@ -32,7 +28,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: COLOR_PRIMARY,
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
   }
 });
 
-AppRegistry.registerComponent('Home', () => Home);
+AppRegistry.registerComponent('Cabinet', () => Cabinet);
